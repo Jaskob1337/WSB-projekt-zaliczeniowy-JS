@@ -1,0 +1,145 @@
+@import 'colors';
+@import url(//db.onlinewebfonts.com/c/6be8b78f5eaa571c3fbf3a1908515cf6?family=Adumu);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.6rem;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+  }
+.wrapper2 {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1800px;
+  }
+
+.shadow-bg {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.6s;
+}
+
+
+nav {
+  z-index: 10000;
+  transition: background-color 0.6s;
+  height: 60px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px rgb(197, 193, 193);
+
+  
+  .less-padding{
+	padding-left:0;
+  }
+
+  .nav-link {
+    color: $nav-color;
+    margin-left: 35px;
+  }
+  .fa-bars {
+    padding: 10px;
+    color: $nav-color;
+    // font-size: ;
+  }
+  a {
+    color: $nav-color;
+  }
+  .nav-link:hover {
+    color: $main-color;
+  }
+
+  a:hover {
+    color: $main-color;
+  }
+  .navbar-brand {
+    font-weight: bold;
+  }
+
+  .navbar-nav {
+    padding-right: 100px;
+  }
+}
+
+.car-choice {
+  padding-top: 60px;
+}
+
+.intro {
+    position: relative;
+
+
+  .heroBanner {
+    height: 100vh;
+
+    .bgcVideo {
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(0.5);
+    }
+
+    .vital-cars-text-center {
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-family: 'Adumu';
+      src: url('//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot');
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      color: $logo-yellow-color;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      h1 {
+        font-size: 5.5rem;
+      }
+      h2 {
+        font-size: 3.5rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+	.navbar-brand{
+		padding-top: 0;
+	}
+	
+	.navbar{
+		padding-top: 0;
+	}}
+
+	@media screen and (max-width: 576px) {
+		.intro .heroBanner .vital-cars-text-center h1{
+		  font-size: 2.5rem;
+		}
+		.intro .heroBanner .vital-cars-text-center h2{
+			font-size: 1.6rem;
+		  }
+	  }
+	@media screen and (min-width: 577px) and (max-width: 992px) {
+		.intro .heroBanner .vital-cars-text-center h1{
+		  font-size: 4.5rem;
+		}
+		.intro .heroBanner .vital-cars-text-center h2{
+			font-size: 2.5rem;
+		  }
+	  }
