@@ -109,10 +109,10 @@ nav {
       text-align: center;
 
       h1 {
-        font-size: 5.5rem;
+        font-size: 6.5rem;
       }
       h2 {
-        font-size: 3.5rem;
+        font-size: 4rem;
       }
     }
   }
@@ -129,17 +129,49 @@ nav {
 
 	@media screen and (max-width: 576px) {
 		.intro .heroBanner .vital-cars-text-center h1{
-		  font-size: 2.5rem;
+		  font-size: 5rem;
 		}
 		.intro .heroBanner .vital-cars-text-center h2{
-			font-size: 1.6rem;
+			font-size: 2.2rem;
 		  }
 	  }
 	@media screen and (min-width: 577px) and (max-width: 992px) {
 		.intro .heroBanner .vital-cars-text-center h1{
-		  font-size: 4.5rem;
+		  font-size: 6rem;
 		}
 		.intro .heroBanner .vital-cars-text-center h2{
-			font-size: 2.5rem;
+			font-size: 3rem;
 		  }
 	  }
+
+	  body {
+		margin: 0;
+	  }
+	  
+	//  SECTION CAR OFFER 
+
+  .no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .no-gutters > .col,
+  .no-gutters > [class*='col-'] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  // SPRAWDZIĆ POTEM CZY BĘDZIE RÓŻNICA JAK NIE BĘDZIE TEJ KLASY
+  .car-offer .img-fluid {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .car-offer .car-card-dimensions{
+    height: 360px;
+  
+  }
+
+  .car-offer .car-card-dimensions img {
+    height: 240px;
+           object-fit: cover;
+  }

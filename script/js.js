@@ -19,3 +19,4 @@ allNavItems.forEach(item => item.addEventListener('click', () => navList.classLi
 
 	window.addEventListener("scroll", addShadow);
 });
+
