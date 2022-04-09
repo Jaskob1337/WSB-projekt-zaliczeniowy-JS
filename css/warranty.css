@@ -11,4 +11,16 @@
   display: -ms-flexbox;
   display: flex;
 }
+
+.container-guarantee .why-us {
+  margin-bottom: 20px;
+}
+
+.container-guarantee .container-icons {
+  margin-top: 20px;
+}
+
+.container-guarantee .fs-1 {
+  padding: 10px;
+}
 /*# sourceMappingURL=warranty.css.map */
