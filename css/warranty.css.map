@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,CAAA;EAChB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "../sass/warranty.scss"
+    ],
+    "names": [],
+    "file": "warranty.css"
+}
