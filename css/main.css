@@ -14,8 +14,20 @@ html {
 }
 
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 1.6rem;
+  margin: 0;
+}
+
+.section-padding {
+  padding: 60px 0 15px 0;
+}
+
+.section-padding h2 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 .wrapper {
@@ -27,7 +39,7 @@ body {
 .wrapper2 {
   margin: 0 auto;
   width: 100%;
-  max-width: 1800px;
+  max-width: 2000px;
 }
 
 .shadow-bg {
@@ -66,11 +78,13 @@ nav a {
 }
 
 nav .nav-link:hover {
-  color: #147fc7;
+  color: #FFCC5A;
 }
 
 nav a:hover {
-  color: #147fc7;
+  color: #FFCC5A;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 nav .navbar-brand {
@@ -150,10 +164,9 @@ nav .navbar-nav {
   .intro .heroBanner .vital-cars-text-center h2 {
     font-size: 3rem;
   }
-}
-
-body {
-  margin: 0;
+  .car-offer .car-card-dimensions {
+    margin-bottom: 15px;
+  }
 }
 
 .no-gutters {
@@ -173,12 +186,64 @@ body {
 }
 
 .car-offer .car-card-dimensions {
-  height: 360px;
+  height: 400px;
 }
 
 .car-offer .car-card-dimensions img {
-  height: 240px;
+  height: 260px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.additional-services {
+  background-color: rgba(231, 231, 230, 0.349);
+  font-size: 1.5rem;
+}
+
+.additional-services h2 {
+  margin: 10px 0 20px 0;
+}
+
+.additional-services h3 {
+  margin: 15px 0 15px 0;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.additional-services .description {
+  min-height: 90px;
+}
+
+.additional-services a {
+  text-decoration: none;
+  color: #9F2E25;
+  font-weight: bold;
+}
+
+.additional-services .filter-logo-brown-color {
+  -webkit-filter: brightness(0) saturate(100%) invert(16%) sepia(44%) saturate(5831%) hue-rotate(354deg) brightness(86%) contrast(79%);
+          filter: brightness(0) saturate(100%) invert(16%) sepia(44%) saturate(5831%) hue-rotate(354deg) brightness(86%) contrast(79%);
+  height: 2.8rem;
+}
+
+.why-us h2 {
+  margin-bottom: 80px;
+}
+
+.why-us h3 {
+  padding: 15px 0 15px 0;
+  font-size: 2.2rem;
+}
+
+.filter-logo-brown-color {
+  -webkit-filter: brightness(0) saturate(100%) invert(16%) sepia(44%) saturate(5831%) hue-rotate(354deg) brightness(86%) contrast(79%);
+          filter: brightness(0) saturate(100%) invert(16%) sepia(44%) saturate(5831%) hue-rotate(354deg) brightness(86%) contrast(79%);
+  height: 5em;
+}
+
+.about-us-footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: rgba(231, 231, 230, 0.349);
 }
 /*# sourceMappingURL=main.css.map */
