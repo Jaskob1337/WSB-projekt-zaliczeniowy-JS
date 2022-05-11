@@ -1,0 +1,345 @@
+@import "colors";
+@import url(//db.onlinewebfonts.com/c/6be8b78f5eaa571c3fbf3a1908515cf6?family=Adumu);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.section-padding {
+  padding: 60px 0 15px 0;
+
+  h2 {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+.wrapper2 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 2000px;
+}
+
+.shadow-bg {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: background-color 0.6s;
+}
+
+nav {
+  z-index: 10000;
+  transition: background-color 0.6s;
+  height: 60px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px rgb(197, 193, 193);
+
+  .less-padding {
+    padding-left: 0;
+  }
+
+  .nav-link {
+    color: $nav-color;
+    margin-left: 35px;
+  }
+  .fa-bars {
+    padding: 10px;
+    color: $nav-color;
+    // font-size: ;
+  }
+  a {
+    color: $nav-color;
+  }
+  .nav-link:hover {
+    color: $nav-hover-color;
+  }
+
+  a:hover {
+    color: $nav-hover-color;
+    transition: all 0.2s;
+  }
+  .navbar-brand {
+    font-weight: bold;
+  }
+
+  .navbar-nav {
+    padding-right: 100px;
+  }
+}
+
+
+.modal {
+  padding-top: 60px; 
+
+  button{
+    transform: scale(1.6);
+    margin: 1rem 3.8rem 1rem 3.8rem;
+  }
+}
+// .modal .modal-dialog .modal-content .modal-body .container {
+//   height: 800px !important;
+// }
+
+// .modal .modal-dialog {
+//   max-width: 100%;
+//   // max-height: 100%;
+//   height: 100%;
+//   margin: 0;
+// }
+// .modal .modal-content {
+//   height: 100%;
+//   border: 0;
+//   border-radius: 0;
+// }
+// .modal .modal-body {
+//   overflow-y: auto;
+// }
+
+
+.car-choice {
+  padding-top: 60px;
+}
+
+.intro {
+  position: relative;
+
+  .heroBanner {
+    height: 100vh;
+
+    .bgcVideo {
+      height: 500px;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(0.5);
+    }
+
+    .vital-cars-text-center {
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      font-family: "Adumu";
+      src: url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot");
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      color: $logo-yellow-color;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+      h1 {
+        font-size: 6.5rem;
+      }
+      h2 {
+        font-size: 4rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .navbar-brand {
+    padding-top: 0;
+  }
+
+  .navbar {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .intro .heroBanner .vital-cars-text-center h1 {
+    font-size: 5rem;
+  }
+  .intro .heroBanner .vital-cars-text-center h2 {
+    font-size: 2.2rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .intro .heroBanner .vital-cars-text-center h1 {
+    font-size: 6rem;
+  }
+  .intro .heroBanner .vital-cars-text-center h2 {
+    font-size: 3rem;
+  }
+
+  .car-offer .car-card-dimensions {
+    margin-bottom: 15px;
+  }
+}
+
+//  SECTION CAR OFFER
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+// SPRAWDZIĆ POTEM CZY BĘDZIE RÓŻNICA JAK NIE BĘDZIE TEJ KLASY
+.car-offer .img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.car-offer .car-card-dimensions {
+  height: 400px;
+}
+
+.car-offer .car-card-dimensions img {
+  // height: 240px;
+  height: 260px;
+  object-fit: cover;
+}
+
+// //
+// SECTION ADDITIONAL-SERVICES
+// //
+
+.additional-services {
+  background-color: $section-color;
+  font-size: 1.5rem;
+  h2 {
+    margin: 10px 0 20px 0;
+  }
+  h3 {
+    margin: 15px 0 15px 0;
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+  .description {
+    min-height: 90px;
+  }
+  a {
+    text-decoration: none;
+    color: $logo-brown-color;
+    font-weight: bold;
+  }
+  .filter-logo-brown-color {
+    filter: brightness(0) saturate(100%) invert(16%) sepia(44%) saturate(5831%)
+      hue-rotate(354deg) brightness(86%) contrast(79%);
+    height: 2.8rem;
+  }
+}
+
+// //
+// SECTION WHY US
+// //
+
+.why-us {
+  h2 {
+    margin-bottom: 80px;
+  }
+
+  h3 {
+    padding: 15px 0 15px 0;
+    font-size: 2.2rem;
+  }
+}
+// POWTÓRZONA KLASA - FIX
+.filter-logo-brown-color {
+  filter: brightness(0) saturate(100%) invert(16%) sepia(44%) saturate(5831%)
+    hue-rotate(354deg) brightness(86%) contrast(79%);
+  height: 5em;
+}
+
+// OPINIE
+
+@media(max-width:767px){
+  .reviews.section-padding{
+    padding: 6em 0;
+  }
+}
+.reviews__box {
+  position: relative;
+  margin: 2em;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 3px 3px 10px #2e2e2e;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(0.95);
+  }
+}
+.reviews__box-img {
+  position: absolute;
+  top: 10%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+
+  img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+.reviews__box-quote {
+  margin-bottom: 1em;
+  font-size: 3em;
+  color: #a3625e;
+}
+.reviews__box-text {
+  margin-bottom: 1em;
+  font-size: 1.4rem;
+  color: hsl(0, 0%, 18%);
+}
+
+// footer
+
+.about-us-footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: $section-color;
+}
+
+footer {
+  padding: 3em 1em;
+  border-top: 1px solid $darker;
+  text-align: center;
+  font-size: 12px;
+  background-color: #6d6d6d;
+}
+
+.footer-title {
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.footer-list-item {
+  list-style: none;
+  padding: 5px;
+  .link {
+    text-align: center;
+    text-decoration: none;
+    color: $darker;
+  }
+  .link:hover {
+    color: #ffffff;
+    transition: color 0.3s;
+  }
+}
