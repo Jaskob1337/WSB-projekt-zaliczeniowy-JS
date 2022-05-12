@@ -49,37 +49,30 @@
   </nav>
 
   <section class="intro wrapper2 style1 fullscreen fade-up">
-    <container class="heroBanner">
+
+    <div class="heroBanner">
       <video class="bgcVideo" src="/video/vitalcars.mp4" autoplay muted loop></video>
       <div class="vital-cars-text-center">
         <h1 class="heroTitle">Vital Cars Wrocław</h1>
         <h2>samochody używane</h2>
       </div>
-    </container>
+    </div>
   </section>
 
-  <section class="car-offer section-padding">
+  <section class="car-offer section-padding ">
+
     <h2 id="featuredOffers" class="p-4">
       <div class="text-center">Polecane oferty</div>
     </h2>
-
-    <!-- SAVE AUT 
-    https://www.olx.pl/d/oferta/bmw-318d-e91-2010-touring-CID5-IDOI9gT.html#b62c7d5637
-    https://www.olx.pl/d/oferta/mercedes-e-klasa-w2012-CID5-IDO0zdf.html#f8320354e0
-    https://www.olx.pl/d/oferta/skoda-octavia-mk3-2016-2-0tdi-dsg-CID5-IDNZGY6.html#ea2a7eefd8;promoted
-    https://www.olx.pl/d/oferta/fiat-126p-fl-1988-CID5-IDNdNZF.html#3450604f63;promoted -->
-
-
-
-
-
-    <div class="container">
+      
+    </div>
+    <div class="container ">
 
       <!-- car modal is here -->
 
       <div id="CarModal" class="modal fade">
         <div class="modal-dialog modal-fullscreen ">
-         
+
           <div class="modal-content">
             <div class="modal-header">
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -106,13 +99,13 @@
                     <p>Wybierz finansowanie:</p>
                     <form class="payment-choice">
                       <input class="" type="radio" name="payment" value="wartość" />
-                      
+
                       <p>Leasing</p>
                       <input type="radio" name="payment" value="wartość" />
                       <p>Gotówka</p>
-                      
+
                     </form>
-                   
+
                     <form class="personal-data">
                       <div class="personal">
                         <p>Podaj swoje imie: </p><input class="name" id="nameLocalSave" type="text"
@@ -123,33 +116,38 @@
 
                       <div class="date">
                         <p>Podaj datę dostawy auta: </p>
-                        <input type="date" name="dateValue" />
-                        
+
+                        <input id="car-date-picker" type="date" autocomplete="off" />
+
                       </div>
                       <div>
-                        
-                        
+
+
                       </div>
                     </form>
                   </div>
-<p>Dobierz akcesoria</p>
-<div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-  <label class="form-check-label" for="flexSwitchCheckDefault">Komplet opon zimowych - <span>950 zł</span></label>
-</div>
-<div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-  <label class="form-check-label" for="flexSwitchCheckDefault">Zestaw dywaników - <span>300 zł</span></label>
-</div>
-<div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-  <label class="form-check-label" for="flexSwitchCheckDefault">Nowe wycieraczki - <span>100 zł</span></label>
-</div>
-<div class="form-check form-switch">
-  <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-  <label class="form-check-label" for="flexSwitchCheckDefault">Płyn do spryskiwaczy - <span>25 zł</span></label>
-</div>
-              <div class="final-price">Finalna cena to:<span id="final-price-span"></span></div>    
+                  <p>Dobierz akcesoria</p>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Komplet opon zimowych - <span>950
+                        zł</span></label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Zestaw dywaników - <span>300
+                        zł</span></label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Nowe wycieraczki - <span>100
+                        zł</span></label>
+                  </div>
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">Płyn do spryskiwaczy - <span>25
+                        zł</span></label>
+                  </div>
+                  <div class="final-price">Finalna cena to:<span id="final-price-span"></span></div>
 
                 </div>
               </section>
@@ -174,9 +172,9 @@
       <div class="row no-gutters mb-4">
         <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
           <div class="border m-2 h-100 description">
-            <a href=""><img class="img-fluid" src="/img/cars/bmw 318 e91.webp" alt="" /></a>
+            <a href=""><img class="img-fluid" src="/img/cars/bmw 318 e91.webp" alt="bmw" /></a>
             <div class="p-3">
-              <a href=""><strong class="pb-2 d-block">BMW 318d Touring E91</strong></a>2010<span class="red"> /
+              <strong class="pb-2 d-block">BMW 318d Touring E91</strong></a>2010<span class="red"> /
               </span>2000 cm<sup>3</sup><span class="red"> / </span>210000 km<span class="red">
                 / </span>Kombi
               <p id="price1">23 000 zł</p>
@@ -227,8 +225,8 @@
             <div class="p-3">
               <a
                 href="samochody/osobowe/toyota-rav4-22-d4d-136km-klimatronik-4x4-gwarancja%2ca44eb6f9-ead5-11e9-a83b-fa163e209614.html"><strong
-                  class="pb-2 d-block">Fiat 126p FL</strong></a>1988<span class="red"> / </span>650 cm<sup>3</sup><span
-                class="red"> / </span>380000 km<span class="red">
+                  class="pb-2 d-block">Fiat 126p FL</strong></a>1988<span class="red"> / </span>650
+              cm<sup>3</sup><span class="red"> / </span>380000 km<span class="red">
                 / </span>SUV
               <p id="price4">9 000 zł</p>
               <button type="button" onclick="dataTransfer(price4)" class="btn btn-primary" data-bs-toggle="modal"
@@ -242,60 +240,57 @@
       <div class="row no-gutters mb-4">
         <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
           <div class="border m-2 h-100 description">
-            <a href=""><img class="img-fluid" src="/img/cars/bmw 318 e91.webp" alt="" /></a>
+            <a href=""><img class="img-fluid" src="/img/cars/kia.webp" alt="kia" /></a>
             <div class="p-3">
-              <a href=""><strong class="pb-2 d-block">BMW 318d Touring E91</strong></a>2010<span class="red"> /
-              </span>2000 cm<sup>3</sup><span class="red"> / </span>210000 km<span class="red">
-                / </span>Kombi
-              <div class="price">23 000 zł</div>
-              <a href="">Wybieram ></a>
-            </div>
-          </div>
-        </div>
-        <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
-          <div class="border m-2 h-100 description">
-            <a href=""><img class="img-fluid" src="/img/cars/Mercedes E Klasa biały.webp" alt="" /></a>
-            <div class="p-3">
-              <a href=""><strong class="pb-2 d-block">Mercedes E Klasa </strong></a>2012<span class="red"> / </span>2
-              200 cm<sup>3</sup><span class="red"> / </span>290000 km<span class="red">
-                / </span>Sedan
-              <div class="price">34 5900 zł</div>
-              <a href="">Wybieram ></a>
-            </div>
-          </div>
-        </div>
-        <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
-          <div class="border m-2 h-100 description">
-            <a href=""><img class="img-fluid" src="/img/cars/skoda octavia III 20.webp" alt="" /></a>
-            <div class="p-3">
-              <a href=""><strong class="pb-2 d-block">Skoda Octavia MK3</strong></a>2016<span class="red"> / </span>2
-              000 cm<sup>3</sup><span class="red"> / </span>155000 km<span class="red">
-                / </span>Kombi
-              <div class="price">65 000 zł</div>
-              <a href="">Wybieram ></a>
-            </div>
-          </div>
-        </div>
-        <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
-          <div class="border m-2 h-100 description">
-            <a
-              href="samochody/osobowe/toyota-rav4-22-d4d-136km-klimatronik-4x4-gwarancja%2ca44eb6f9-ead5-11e9-a83b-fa163e209614.html"><img
-                class="img-fluid" src="/img/cars/fiat 126p grey.webp" alt="" /></a>
-            <div class="p-3">
-              <a
-                href="samochody/osobowe/toyota-rav4-22-d4d-136km-klimatronik-4x4-gwarancja%2ca44eb6f9-ead5-11e9-a83b-fa163e209614.html"><strong
-                  class="pb-2 d-block">Fiat 126p FL</strong></a>1988<span class="red"> / </span>650 cm<sup>3</sup><span
-                class="red"> / </span>380000 km<span class="red">
+              <a href=""><strong class="pb-2 d-block">Kia Sportage 2.0</strong></a>2013<span class="red"> /
+              </span>1998 cm<sup>3</sup><span class="red"> / </span>176000 km<span class="red">
                 / </span>SUV
-              <div class="price">10 000 zł</div>
-              <a
-                href="samochody/osobowe/toyota-rav4-22-d4d-136km-klimatronik-4x4-gwarancja%2ca44eb6f9-ead5-11e9-a83b-fa163e209614.html">Wybieram
+              <div class="price">56 000 zł</div>
+              <a href="">Wybieram ></a>
+            </div>
+          </div>
+        </div>
+        <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
+          <div class="border m-2 h-100 description">
+            <a href=""><img class="img-fluid" src="/img/cars/opel astra.webp" alt="opel astra" /></a>
+            <div class="p-3">
+              <a href=""><strong class="pb-2 d-block">Opel Astra J 1.7 CDTI </strong></a>2012<span class="red"> /
+              </span>1686 cm<sup>3</sup><span class="red"> / </span>160000 km<span class="red">
+                / </span>Sedan
+              <div class="price">24 000 zł</div>
+              <a href="">Wybieram ></a>
+            </div>
+          </div>
+        </div>
+        <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
+          <div class="border m-2 h-100 description">
+            <a href=""><img class="img-fluid" src="/img/cars/porshe.webp" alt="porshe" /></a>
+            <div class="p-3">
+              <a href=""><strong class="pb-2 d-block">Porsche Panamera 4S PDK</strong></a>2010<span class="red"> /
+              </span>4806 cm<sup>3</sup><span class="red"> / </span>190000 km<span class="red">
+                / </span>Sedan
+              <div class="price">120 000 zł</div>
+              <a href="">Wybieram ></a>
+            </div>
+          </div>
+        </div>
+        <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
+          <div class="border m-2 h-100 description">
+            <a href=""><img class="img-fluid" src="/img/cars/renault.webp" alt="renault" /></a>
+            <div class="p-3">
+              <a href=""><strong class="pb-2 d-block">RENAULT MEGANE III</strong></a>2010<span class="red"> /
+              </span>1500 cm<sup>3</sup><span class="red"> / </span>120000 km<span class="red">
+                / </span>Sedan
+              <div class="price">17 000 zł</div>
+              <a href="">Wybieram
                 ></a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+
   </section>
   <section class="additional-services section-padding">
     <h2 id="additionalServices" class="p-4">

@@ -15,7 +15,10 @@
     display: grid;
     grid-template-rows: 1fr;
     font-family: "Raleway", sans-serif;
-    background-color: #df7c7c;
+    // background-color: #df7c7c;
+    background: rgb(154,0,0);
+    background: linear-gradient(180deg, rgba(154,0,0,0.8603816526610644) 0%, rgba(255,90,114,1) 50%, rgba(145,0,0,0.8491771708683473) 100%);
+
 }
 h3 {
 	font-size: 0.7em;
@@ -25,7 +28,7 @@ h3 {
 
 img {
   max-width: 100%;
-  filter: drop-shadow(1px 1px 3px grey);
+  filter: drop-shadow(3px 5px 3px rgb(5, 5, 5));
 }
 
 }
@@ -62,19 +65,22 @@ img {
 .photo-main {
 	border-radius: 6px 6px 0 0;
 	background-color: #a9ad9f;
-	background: radial-gradient(#ff8e8e, #b13d3d);
+	background: radial-gradient(#ff8e8e, #bd2121);
 
 	
 
 	img {
 		position: absolute;
 		left: -4em;
-		top: 11em;
+		top: 12em;
 		max-width: 110%;
-		filter: saturate(150%) contrast(120%) hue-rotate(10deg)
-			drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
       transform: scale(1.25);
+      transition: transform .7s;
 	}
+
+  :hover{
+    transform: scale(1.3);
+  }
 }
 
 

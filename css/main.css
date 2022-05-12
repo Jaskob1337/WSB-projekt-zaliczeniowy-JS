@@ -114,7 +114,7 @@ nav .navbar-nav {
 }
 
 .intro .heroBanner {
-  height: 100vh;
+  margin-bottom: -20px;
 }
 
 .intro .heroBanner .bgcVideo {

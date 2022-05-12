@@ -1,5 +1,3 @@
-
-
 document.getElementById('choose1')
 document.getElementById('formprice')
 
@@ -40,12 +38,40 @@ handleCurrentYear()
 
 //
 
+//  function save name in input
+
 const inputfunction = document.getElementById('nameLocalSave')
-inputfunction.value = sessionStorage.getItem("key");
-inputfunction.onchange = function(){
-  const key = inputfunction.value;
-  sessionStorage.setItem('key', key);
-};
+inputfunction.value = sessionStorage.getItem('key')
+inputfunction.onchange = function () {
+  const key = inputfunction.value
+  sessionStorage.setItem('key', key)
+}
 
+// date car choose
 
+const dateChoose = document.getElementById('car-date-picker')
 
+dateChoose.min = getDate()
+dateChoose.max = getDate(14)
+
+function getDate(days) {
+  let date
+
+  if (days !== undefined) {
+    date = new Date(Date.now() + days * 24 * 60 * 60 * 1000)
+  } else {
+    date = new Date()
+  }
+
+  const offset = date.getTimezoneOffset()
+
+  date = new Date(date.getTime() - offset * 60 * 1000)
+
+  return date.toISOString().split('T')[0]
+}
+
+// function of selecting picked date to final validation button
+
+function selectCarDate() {
+  dateChoose.select();
+}
