@@ -519,16 +519,7 @@
 
   </div>
 
-  <!-- <div class="CookieMessageBox">
-    <p>
-    <p>Uprzejmie prosimy o zapoznanie się z klauzulą informacyjną dotyczącą przetwarzania Państwa danych osobowych
-      klikając <a href="klauzula-informacyjna.html" target="_blank">TUTAJ</a></p>
-    <p>Nasza strona internetowa korzysta z plików cookies w celach statystycznych. Jeżeli nie
-      wyrażają Państwo zgody na wykorzystywanie plików cookies prosimy o zmianę ustawień
-      przeglądarki internetowej lub opuszczenie strony. Dowiedz się więcej <a href="polityka-cookies.html"
-        target="_blank">TUTAJ</a></p>
-    <button type="button" class="btn btn-xs btn-success CookieMessageOk">Akceptuję pliki cookies</button> </p>
-  </div> -->
+  
 
   <footer class="footer">
     <p class="footer__bottom-text">
@@ -544,6 +535,19 @@
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./script/slick.js"></script>
+
+  <script type="module" src="/path/to/js.cookie.mjs"></script>
+<script type="module">
+  import Cookies from '/path/to/js.cookie.mjs'
+
+  Cookies.set('foo', 'bar')
+
+  import Cookies from 'js-cookie'
+
+Cookies.set('foo', 'bar')
+
+</script>
+
 </body>
 
 </html>
