@@ -63,13 +63,19 @@ nav {
           box-shadow: 0px 0px 5px #c5c1c1;
 }
 
-nav .less-padding {
-  padding-left: 0;
-}
-
 nav .nav-link {
   color: black;
   margin-left: 35px;
+}
+
+@media (max-width: 991px) {
+  nav .nav-link {
+    color: #FFCC5A;
+    text-shadow: -1px 0 #9f2e25, 0 1px #9f2e25, 1px 0 #9f2e25, 0 -1px #9f2e25;
+    font-size: 1.3em;
+    margin-left: 20px;
+    width: 130px;
+  }
 }
 
 nav .fa-bars {
@@ -133,7 +139,7 @@ nav .navbar-nav {
 .intro .heroBanner .vital-cars-text-center {
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-family: "Adumu";
+  font-family: 'Adumu';
   position: absolute;
   top: 60%;
   left: 50%;
@@ -167,6 +173,21 @@ nav .navbar-nav {
   .intro .heroBanner .vital-cars-text-center h2 {
     font-size: 2.2rem;
   }
+  #deleteCarSestionMedia {
+    display: none;
+    margin-left: 20px;
+  }
+  #deleteGridSestionMedia {
+    min-width: 350px;
+    display: block;
+  }
+  #deleteInfoSestionMedia {
+    margin-left: 20px;
+  }
+  #modal-footer-Small-Media {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -178,6 +199,17 @@ nav .navbar-nav {
   }
   .car-offer .car-card-dimensions {
     margin-bottom: 15px;
+  }
+  #deleteCarSestionMedia {
+    display: none;
+  }
+  #deleteInfoSestionMedia {
+    margin-left: 45px;
+  }
+  #deleteGridSestionMedia {
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    display: block;
   }
 }
 
@@ -192,16 +224,19 @@ nav .navbar-nav {
   padding-left: 0;
 }
 
+.no-gutters > .col .btn-primary,
+.no-gutters > [class*='col-'] .btn-primary {
+  margin-left: 10px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  display: block;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
 .car-offer .img-fluid {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-}
-
-.car-offer .car-card-dimensions {
-  height: 400px;
-}
-
-.car-offer .car-card-dimensions img {
   height: 260px;
   -o-object-fit: cover;
      object-fit: cover;

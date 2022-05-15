@@ -1,14 +1,28 @@
-.column {
+.smaller {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.aboutme {
   float: left;
   width: 33.3%;
   margin-bottom: 16px;
   padding: 0 8px;
 }
 
-.card {
+.aboutme .card {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin: 8px;
+  min-height: 730px;
+}
+
+.aboutme .card img {
+  height: 390px;
+}
+
+.aboutme .card h2 {
+  padding-top: 15px;
 }
 
 .about-as-title {
@@ -23,6 +37,10 @@
   left: 0px;
   margin: auto;
   color: black;
+}
+
+.descheight {
+  min-height: 150px;
 }
 
 .about-section {
@@ -48,8 +66,9 @@
   padding: 0 16px;
 }
 
-.container::after, .row::after {
-  content: "";
+.container::after,
+.row::after {
+  content: '';
   clear: both;
   display: table;
 }
