@@ -1,5 +1,4 @@
 .container-guarantee {
-  padding-top: 30px;
   width: 100%;
   height: 100vh;
   -webkit-box-pack: center;
@@ -23,12 +22,5 @@
 
 .container-guarantee .fs-1 {
   padding: 10px;
-}
-
-@media screen and (min-width: 577px) and (max-width: 992px) {
-  .container-guarantee {
-    padding-top: 100px;
-    height: 100%;
-  }
 }
 /*# sourceMappingURL=warranty.css.map */
