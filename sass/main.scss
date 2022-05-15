@@ -1,4 +1,4 @@
-@import "colors";
+@import 'colors';
 @import url(//db.onlinewebfonts.com/c/6be8b78f5eaa571c3fbf3a1908515cf6?family=Adumu);
 
 *,
@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: "Roboto Slab", sans-serif;
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 1.6rem;
   margin: 0;
 }
@@ -26,7 +26,7 @@ body {
   h2 {
     font-size: 3.5rem;
     text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
   }
 }
@@ -66,7 +66,6 @@ nav {
   .fa-bars {
     padding: 10px;
     color: $nav-color;
-    // font-size: ;
   }
   a {
     color: $nav-color;
@@ -88,34 +87,14 @@ nav {
   }
 }
 
-
 .modal {
-  padding-top: 60px; 
+  padding-top: 60px;
 
-  button{
+  button {
     transform: scale(1.6);
     margin: 1rem 3.8rem 1rem 3.8rem;
   }
 }
-// .modal .modal-dialog .modal-content .modal-body .container {
-//   height: 800px !important;
-// }
-
-// .modal .modal-dialog {
-//   max-width: 100%;
-//   // max-height: 100%;
-//   height: 100%;
-//   margin: 0;
-// }
-// .modal .modal-content {
-//   height: 100%;
-//   border: 0;
-//   border-radius: 0;
-// }
-// .modal .modal-body {
-//   overflow-y: auto;
-// }
-
 
 .car-choice {
   padding-top: 60px;
@@ -135,11 +114,9 @@ nav {
     }
 
     .vital-cars-text-center {
-      color: #ffffff;
       text-transform: uppercase;
       letter-spacing: 5px;
-      font-family: "Adumu";
-      src: url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot");
+      font-family: 'Adumu';
       position: absolute;
       top: 60%;
       left: 50%;
@@ -188,18 +165,14 @@ nav {
   }
 }
 
-
-
 //  SECTION CAR OFFER
-
-
 
 .no-gutters {
   margin-right: 0;
   margin-left: 0;
 }
 .no-gutters > .col,
-.no-gutters > [class*="col-"] {
+.no-gutters > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
 }
@@ -273,8 +246,8 @@ nav {
 
 // OPINIE
 
-@media(max-width:767px){
-  .reviews.section-padding{
+@media (max-width: 767px) {
+  .reviews.section-padding {
     padding: 6em 0;
   }
 }
@@ -324,10 +297,8 @@ nav {
 
 footer {
   padding: 3em 1em;
-  border-top: 1px solid $darker;
   text-align: center;
   font-size: 12px;
-  background-color: #6d6d6d;
 }
 
 .footer-title {
@@ -340,10 +311,55 @@ footer {
   .link {
     text-align: center;
     text-decoration: none;
-    color: $darker;
+    color: black;
   }
   .link:hover {
     color: #ffffff;
     transition: color 0.3s;
   }
 }
+
+// SECTION IMAGE TUNNEL
+
+.hero-tunnel {
+  position: relative;
+
+  .hero-img-tunnel {
+    padding: 15em;
+    margin-top: 3em;
+    background-size: cover;
+    background-image: url(/img/backgrounds/cartunel.webp);
+    filter: brightness(60%);
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    z-index: -1;
+  }
+  .hero-txt-tunnel {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    bottom: 35%;
+    left: 50%;
+    width: 90%;
+
+    h2 {
+      text-align: center;
+      font-size: 5rem;
+      color: $logo-yellow-color;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      font-family: 'Adumu';
+      @media screen and (max-width: 576px) {
+        font-size: 3rem;
+      @media screen and (min-width: 577px) and (max-width: 992px) {
+        font-size: 4rem;
+      }
+
+      }
+    }
+  }
+}
+
+
+

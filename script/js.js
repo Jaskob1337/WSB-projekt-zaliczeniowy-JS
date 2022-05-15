@@ -76,19 +76,5 @@ function selectCarDate() {
   dateChoose.select();
 }
 
-// modal no close on refresh page
 
-const loadModal = function() {
-  $('#CarModal').modal('show');
-  Cookies.set('isMyModalActive', true);
-};
-
-const exitModal = function() {
-  $('#CarModal').modal('hide');
-  Cookies.remove('isMyModalActive');
-};
-
-if(Cookies.get('isMyModalActive')) {
-  loadModal();
-}
 
