@@ -72,6 +72,15 @@ nav .nav-link {
   margin-left: 35px;
 }
 
+@media (max-width: 991px) {
+  nav .nav-link {
+    color: #FFCC5A;
+    text-shadow: -1px 0 #9F2E25, 0 1px #9F2E25, 1px 0 #9F2E25, 0 -1px #9F2E25;
+    font-size: 1.3em;
+    margin-left: 20px;
+  }
+}
+
 nav .fa-bars {
   padding: 10px;
   color: black;
@@ -133,7 +142,7 @@ nav .navbar-nav {
 .intro .heroBanner .vital-cars-text-center {
   text-transform: uppercase;
   letter-spacing: 5px;
-  font-family: "Adumu";
+  font-family: 'Adumu';
   position: absolute;
   top: 60%;
   left: 50%;

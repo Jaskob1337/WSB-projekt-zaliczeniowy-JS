@@ -8,12 +8,19 @@ const exitModal = function () {
   $('#CarModal').modal('hide')
   Cookies.remove('isMyModalActive')
 }
-const button = document.querySelector('[data-bs-toggle="modal"]')
-button.onclick = function () {
-  loadModal()
-};
+const buttons = document.querySelectorAll('[data-bs-toggle="modal"]')
+
+for (let i = 0; i < buttons.length; i++) {
+    buttons[i].onclick = function () {
+        loadModal()
+    };
+}
 const button2 = document.getElementById('buttonexit')
 button2.onclick = function () {
+  exitModal()
+};
+const button3 = document.getElementById('closeModalCross')
+button3.onclick = function () {
   exitModal()
 };
 

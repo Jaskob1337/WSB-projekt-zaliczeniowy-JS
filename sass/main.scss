@@ -1,7 +1,9 @@
 @import 'colors';
 // @import url(//db.onlinewebfonts.com/c/6be8b78f5eaa571c3fbf3a1908515cf6?family=Adumu);
-@font-face { font-family: Adumu; src: url('../font/Adumu/@font-face/6be8b78f5eaa571c3fbf3a1908515cf6.ttf'); } 
-
+@font-face {
+  font-family: Adumu;
+  src: url('../font/Adumu/@font-face/6be8b78f5eaa571c3fbf3a1908515cf6.ttf');
+}
 
 *,
 *::before,
@@ -64,6 +66,13 @@ nav {
   .nav-link {
     color: $nav-color;
     margin-left: 35px;
+    @media (max-width: 991px) {
+      color: $nav-color2;
+      text-shadow: -1px 0 #9F2E25, 0 1px #9F2E25, 1px 0 #9F2E25, 0 -1px #9F2E25;
+      font-size: 1.3em;
+      margin-left: 20px;
+
+    }
   }
   .fa-bars {
     padding: 10px;
@@ -118,7 +127,7 @@ nav {
     .vital-cars-text-center {
       text-transform: uppercase;
       letter-spacing: 5px;
-      font-family: "Adumu"; 
+      font-family: 'Adumu';
       position: absolute;
       top: 60%;
       left: 50%;
@@ -178,16 +187,14 @@ nav {
   padding-right: 0;
   padding-left: 0;
 
-  .btn-primary{
+  .btn-primary {
     margin-left: 10px;
     transform: scale(1.4);
     display: block;
-  margin-left: auto;
-  margin-right: 15px;
-    
+    margin-left: auto;
+    margin-right: 15px;
   }
 }
-
 
 .car-offer .img-fluid {
   width: 100%;
@@ -195,7 +202,6 @@ nav {
   height: 260px;
   object-fit: cover;
 }
-
 
 // //
 // SECTION ADDITIONAL-SERVICES
@@ -354,17 +360,13 @@ footer {
       text-transform: uppercase;
       letter-spacing: 6px;
       font-family: 'Adumu';
-      src: url("../db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot"); 
+      src: url('../db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot');
       @media screen and (max-width: 576px) {
         font-size: 3rem;
-      @media screen and (min-width: 577px) and (max-width: 992px) {
-        font-size: 4rem;
-      }
-
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+          font-size: 4rem;
+        }
       }
     }
   }
 }
-
-
-
