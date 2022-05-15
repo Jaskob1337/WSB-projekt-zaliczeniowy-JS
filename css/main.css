@@ -130,6 +130,7 @@ nav .navbar-nav {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-family: 'Adumu';
+  src: url(//db.onlinewebfonts.com/c/6be8b78f5eaa571c3fbf3a1908515cf6?family=Adumu);
   position: absolute;
   top: 60%;
   left: 50%;
@@ -343,7 +344,7 @@ footer {
   padding: 15em;
   margin-top: 3em;
   background-size: cover;
-  background-image: url(/img/backgrounds/cartunel.webp);
+  background-image: url(./img/backgrounds/cartunel.webp);
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
   background-position: center;
@@ -369,6 +370,7 @@ footer {
   text-transform: uppercase;
   letter-spacing: 6px;
   font-family: 'Adumu';
+  src: url(//db.onlinewebfonts.com/c/6be8b78f5eaa571c3fbf3a1908515cf6?family=Adumu);
 }
 
 @media screen and (max-width: 576px) {
