@@ -130,7 +130,8 @@ nav .navbar-nav {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-family: 'Adumu';
-  src: url(//db.onlinewebfonts.com/c/6be8b78f5eaa571c3fbf3a1908515cf6?family=Adumu);
+  src: url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot");
+  src: url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.woff") format("woff"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.svg#Adumu") format("svg");
   position: absolute;
   top: 60%;
   left: 50%;
@@ -370,7 +371,8 @@ footer {
   text-transform: uppercase;
   letter-spacing: 6px;
   font-family: 'Adumu';
-  src: url(//db.onlinewebfonts.com/c/6be8b78f5eaa571c3fbf3a1908515cf6?family=Adumu);
+  src: url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot");
+  src: url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.woff") format("woff"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.svg#Adumu") format("svg");
 }
 
 @media screen and (max-width: 576px) {
