@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Roboto Slab', 'Adumu' sans-serif;
   font-size: 1.6rem;
   margin: 0;
 }
@@ -116,8 +116,7 @@ nav {
     .vital-cars-text-center {
       text-transform: uppercase;
       letter-spacing: 5px;
-      font-family: 'Adumu';
-     src: url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot"); src: url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.woff") format("woff"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.svg#Adumu") format("svg"); 
+      font-family: "Adumu"; src: url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot"); src: url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.woff") format("woff"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.svg#Adumu") format("svg"); 
       position: absolute;
       top: 60%;
       left: 50%;
@@ -351,7 +350,7 @@ footer {
       text-transform: uppercase;
       letter-spacing: 6px;
       font-family: 'Adumu';
-      src: url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot"); src: url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.woff") format("woff"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.svg#Adumu") format("svg"); 
+      src: url("../db.onlinewebfonts.com/t/6be8b78f5eaa571c3fbf3a1908515cf6.eot"); 
       @media screen and (max-width: 576px) {
         font-size: 3rem;
       @media screen and (min-width: 577px) and (max-width: 992px) {
