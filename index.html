@@ -97,23 +97,37 @@
                   </div>
 
                   <div class="carschoosemodal">
-                    <p>Bazowa cena pojazdu to: <span id="formprice2"></span></p>
+                    <p class="result"> d</p>
                     <p>Wybierz finansowanie:</p>
                     <form class="payment-choice">
+
+                      <input class="selectLeasing confirm" type="radio" name="payment" value="wartość" />
+
+                      <p>Leasing</p>
+                      <input class="selectCash confirm" type="radio" name="payment" value="wartość" />
+
                       <input id="leasingId" onClick="save()" type="radio" name="payment" value="wartość" />
 
                       <p>Leasing</p>
                       <input id="CaschId" onClick="save2()" type="radio" name="payment" value="wartość" />
+
                       <p>Gotówka</p>
 
                     </form>
 
                     <form class="personal-data">
                       <div class="personal">
+
+                        <p>Podaj swoje imie: </p><input class="name personal" id="nameLocalSave" type="text"
+                          placeholder="Tutaj wpisz imie..." />
+                        <p>Podaj swoje nazwisko: </p>
+                        <input class="surname personal" type="text" placeholder="A tu nazwisko... " />
+                        <p class="errorMessage hidden" id="errorMessage " >halo halo, wszystkie pola muszą być wypełnione ! :)</p>
                         <p>Podaj swoje imie: </p><input class="name" id="nameLocalSave" type="text"
                           placeholder="*Tutaj wpisz imie..." />
                         <p>Podaj swoje nazwisko: </p>
                         <input class="surname" id="surnameLocalSave" type="text" placeholder="*A tu nazwisko... " />
+
                       </div>
 
                       <div class="date">
@@ -130,36 +144,42 @@
                   </div>
                   <p>Dobierz akcesoria</p>
                   <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input value="950"class="form-check-input tires checkbox" type="checkbox" id="flexSwitchCheckDefault" onclick="totalPrice()">
                     <label class="form-check-label" for="flexSwitchCheckDefault">Komplet opon zimowych - <span>950
                         zł</span></label>
                   </div>
                   <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input value="300" class="form-check-input mat checkbox" type="checkbox" id="flexSwitchCheckDefault" onclick="totalPrice()">
                     <label class="form-check-label" for="flexSwitchCheckDefault">Zestaw dywaników - <span>300
                         zł</span></label>
                   </div>
                   <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input value="100"class="form-check-input wipers checkbox" type="checkbox" id="flexSwitchCheckDefault" onclick="totalPrice()">
                     <label class="form-check-label" for="flexSwitchCheckDefault">Nowe wycieraczki - <span>100
                         zł</span></label>
                   </div>
                   <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input value="25" class="form-check-input liquid checkbox" type="checkbox" id="flexSwitchCheckDefault" onclick="totalPrice()">
                     <label class="form-check-label" for="flexSwitchCheckDefault">Płyn do spryskiwaczy - <span>25
                         zł</span></label>
                   </div>
-                  <div class="final-price">Finalna cena to:<span id="final-price-span"></span></div>
+                  <div class="final-price">Finalna cena to:<span value="0" class="finalPrice" id="final-price-span"></span></div>
 
                 </div>
               </section>
 
 
             </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Powrót do wyboru aut</button>
+              <button type="button" class="btn btn-primary confirm-validation">Potwierdzam zakup</button>
+
             <div id="modal-footer-Small-Media" class="modal-footer">
               <button id="buttonexit" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Powrót do wyboru
                 aut</button>
               <button type="button" class="btn btn-primary">Potwierdzam zakup</button>
+
             </div>
 
           </div>
@@ -178,7 +198,7 @@
               </span>2000 cm<sup>3</sup><span> / </span>210000 km<span>
                 / </span>Kombi
               <p id="price1">23 000 zł</p>
-              <button type="button" onclick="dataTransfer(price1)" class="btn btn-primary" data-bs-toggle="modal"
+              <button type="button" onclick="dataTransfer(price1)" class="btn btn-primary selectBmw" data-bs-toggle="modal"
                 data-bs-target="#CarModal">
                 Wybieram
               </button>
@@ -196,7 +216,7 @@
               200 cm<sup>3</sup><span> / </span>290000 km<span>
                 / </span>Sedan
               <p id="price2">34 5900 zł</p>
-              <button type="button" onclick="dataTransfer(price2)" class="btn btn-primary" data-bs-toggle="modal"
+              <button type="button" onclick="dataTransfer(price2)" class="btn btn-primary selectMerc" data-bs-toggle="modal"
                 data-bs-target="#CarModal">
                 Wybieram
               </button>
@@ -213,7 +233,7 @@
               000 cm<sup>3</sup><span> / </span>155000 km<span>
                 / </span>Kombi
               <p id="price3">65 000 zł</p>
-              <button type="button" onclick="dataTransfer(price3)" class="btn btn-primary" data-bs-toggle="modal"
+              <button type="button" onclick="dataTransfer(price3)" class="btn btn-primary selectSkoda" data-bs-toggle="modal"
                 data-bs-target="#CarModal">
                 Wybieram
               </button>
@@ -229,7 +249,7 @@
               cm<sup>3</sup><span> / </span>380000 km<span>
                 / </span>SUV
               <p id="price4">9 000 zł</p>
-              <button type="button" onclick="dataTransfer(price4)" class="btn btn-primary" data-bs-toggle="modal"
+              <button type="button" onclick="dataTransfer(price4)" class="btn btn-primary selectFiat" data-bs-toggle="modal"
                 data-bs-target="#CarModal">
                 Wybieram
               </button>
@@ -246,11 +266,19 @@
               <strong class="pb-2 d-block">Kia Sportage 2.0</strong></a>2013<span> /
               </span>1998 cm<sup>3</sup><span> / </span>176000 km<span>
                 / </span>SUV
+
+              <div class="price">56 000 zł</div>
+              <button type="button" onclick="dataTransfer(price4)" class="btn btn-primary selectKia" data-bs-toggle="modal"
+              data-bs-target="#CarModal">
+              Wybieram
+            </button>
+
               <div id="price5">56 000 zł</div>
               <button type="button" onclick="dataTransfer(price5)" class="btn btn-primary" data-bs-toggle="modal"
                 data-bs-target="#CarModal">
                 Wybieram
               </button>
+
             </div>
           </div>
         </div>
@@ -262,11 +290,19 @@
               <strong class="pb-2 d-block">Opel Astra J 1.7 CDTI </strong></a>2012<span> /
               </span>1686 cm<sup>3</sup><span> / </span>160000 km<span>
                 / </span>Sedan
+
+              <div class="price">24 000 zł</div>
+              <button type="button" onclick="dataTransfer(price4)" class="btn btn-primary selectOpel" data-bs-toggle="modal"
+              data-bs-target="#CarModal">
+              Wybieram
+            </button>
+
               <div id="price6">24 000 zł</div>
               <button type="button" onclick="dataTransfer(price6)" class="btn btn-primary" data-bs-toggle="modal"
                 data-bs-target="#CarModal">
                 Wybieram
               </button>
+
             </div>
           </div>
         </div>
@@ -278,11 +314,19 @@
               <strong class="pb-2 d-block">Porsche Panamera 4S PDK</strong></a>2010<span> /
               </span>4806 cm<sup>3</sup><span> / </span>190000 km<span>
                 / </span>Sedan
+
+              <div class="price">120 000 zł</div>
+              <button type="button" onclick="dataTransfer(price4)" class="btn btn-primary selectPorsche" data-bs-toggle="modal"
+              data-bs-target="#CarModal">
+              Wybieram
+            </button>
+
               <div id="price7">120 000 zł</div>
               <button type="button" onclick="dataTransfer(price7)" class="btn btn-primary" data-bs-toggle="modal"
                 data-bs-target="#CarModal">
                 Wybieram
               </button>
+
             </div>
           </div>
         </div>
@@ -294,12 +338,20 @@
               <strong class="pb-2 d-block">RENAULT MEGANE III</strong></a>2010<span> /
               </span>1500 cm<sup>3</sup><span> / </span>120000 km<span>
                 / </span>Sedan
+
+              <div class="price">17 000 zł</div>
+              <button type="button" onclick="dataTransfer(price4)" class="btn btn-primary selectRenault" data-bs-toggle="modal"
+              data-bs-target="#CarModal">
+              Wybieram
+            </button>
+
               <div id="price8">17 000 zł</div>
 
               <button type="button" onclick="dataTransfer(price8)" class="btn btn-primary" data-bs-toggle="modal"
                 data-bs-target="#CarModal">
                 Wybieram
               </button>
+
             </div>
           </div>
         </div>
