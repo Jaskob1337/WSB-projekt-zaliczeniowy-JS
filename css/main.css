@@ -192,16 +192,19 @@ nav .navbar-nav {
   padding-left: 0;
 }
 
+.no-gutters > .col .btn-primary,
+.no-gutters > [class*='col-'] .btn-primary {
+  margin-left: 10px;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+  display: block;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
 .car-offer .img-fluid {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-}
-
-.car-offer .car-card-dimensions {
-  height: 400px;
-}
-
-.car-offer .car-card-dimensions img {
   height: 260px;
   -o-object-fit: cover;
      object-fit: cover;

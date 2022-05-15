@@ -177,23 +177,25 @@ nav {
 .no-gutters > [class*='col-'] {
   padding-right: 0;
   padding-left: 0;
+
+  .btn-primary{
+    margin-left: 10px;
+    transform: scale(1.4);
+    display: block;
+  margin-left: auto;
+  margin-right: 15px;
+    
+  }
 }
 
-// SPRAWDZIĆ POTEM CZY BĘDZIE RÓŻNICA JAK NIE BĘDZIE TEJ KLASY
+
 .car-offer .img-fluid {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-}
-
-.car-offer .car-card-dimensions {
-  height: 400px;
-}
-
-.car-offer .car-card-dimensions img {
-  // height: 240px;
   height: 260px;
   object-fit: cover;
 }
+
 
 // //
 // SECTION ADDITIONAL-SERVICES
