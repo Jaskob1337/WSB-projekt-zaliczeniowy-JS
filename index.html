@@ -30,15 +30,16 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="82">
   <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100" style="background-color: #ffffff">
-    <div class="container less-padding">
-      <a class="navbar-brand" href="index.html"><img src="./img/vitalCars.png" alt="logo Vital Cars" /></a>
+    <div class="container ">
+      <a class="navbar-brand" href="index.html"><img id="closeModalLogo" src="./img/vitalCars.png"
+          alt="logo Vital Cars" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="#">Strona główna</a>
+          <a class="nav-link" id="closeModalNavMainpage" href="/index.html">Strona główna</a>
           <a class="nav-link" href="./sites/warranty.html">Gwarancja</a>
           <a class="nav-link" href="./sites/about-us.html">O nas</a>
           <a class="nav-link" href="./sites/contact.html">Kontakt</a>
@@ -75,12 +76,13 @@
 
           <div class="modal-content">
             <div class="modal-header">
-              <button id="closeModalCross" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <button id="closeModalCross" type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
             </div>
             <div class="modal-body">
 
-              <section class="product">
-                <div class="product__photo">
+              <section id="deleteGridSestionMedia" class="product">
+                <div id="deleteCarSestionMedia" class="product__photo">
                   <div class="photo-container">
                     <div class="photo-main">
 
@@ -89,7 +91,7 @@
 
                   </div>
                 </div>
-                <div class="product__info">
+                <div id="deleteInfoSestionMedia" class="product__info">
                   <div class="title">
                     <h1>Skonfiguruj swój zakup</h1>
                   </div>
@@ -98,10 +100,10 @@
                     <p>Bazowa cena pojazdu to: <span id="formprice2"></span></p>
                     <p>Wybierz finansowanie:</p>
                     <form class="payment-choice">
-                      <input class="" type="radio" name="payment" value="wartość" />
+                      <input id="leasingId" onClick="save()" type="radio" name="payment" value="wartość" />
 
                       <p>Leasing</p>
-                      <input type="radio" name="payment" value="wartość" />
+                      <input id="CaschId" onClick="save2()" type="radio" name="payment" value="wartość" />
                       <p>Gotówka</p>
 
                     </form>
@@ -109,9 +111,9 @@
                     <form class="personal-data">
                       <div class="personal">
                         <p>Podaj swoje imie: </p><input class="name" id="nameLocalSave" type="text"
-                          placeholder="Tutaj wpisz imie..." />
+                          placeholder="*Tutaj wpisz imie..." />
                         <p>Podaj swoje nazwisko: </p>
-                        <input class="surname" type="text" placeholder="A tu nazwisko... " />
+                        <input class="surname" id="surnameLocalSave" type="text" placeholder="*A tu nazwisko... " />
                       </div>
 
                       <div class="date">
@@ -154,11 +156,12 @@
 
 
             </div>
-            <div class="modal-footer">
-              <button id="buttonexit" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Powrót do wyboru aut</button>
+            <div id="modal-footer-Small-Media" class="modal-footer">
+              <button id="buttonexit" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Powrót do wyboru
+                aut</button>
               <button type="button" class="btn btn-primary">Potwierdzam zakup</button>
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -175,11 +178,11 @@
               </span>2000 cm<sup>3</sup><span> / </span>210000 km<span>
                 / </span>Kombi
               <p id="price1">23 000 zł</p>
-              <button type="button" onclick="dataTransfer(price1)"class="btn btn-primary" data-bs-toggle="modal"
+              <button type="button" onclick="dataTransfer(price1)" class="btn btn-primary" data-bs-toggle="modal"
                 data-bs-target="#CarModal">
                 Wybieram
               </button>
-           
+
               <div><span id="formprice"></span></div>
             </div>
           </div>
@@ -237,8 +240,8 @@
       <div class="row no-gutters mb-4">
         <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
           <div class="border m-2 h-100 description">
-            <a
-            href="" data-bs-toggle="modal" data-bs-target="#CarModal" onclick="dataTransfer(price5)"><img class="img-fluid" src="./img/cars/kia.webp" alt="kia" /></a>
+            <a href="" data-bs-toggle="modal" data-bs-target="#CarModal" onclick="dataTransfer(price5)"><img
+                class="img-fluid" src="./img/cars/kia.webp" alt="kia" /></a>
             <div class="p-3">
               <strong class="pb-2 d-block">Kia Sportage 2.0</strong></a>2013<span> /
               </span>1998 cm<sup>3</sup><span> / </span>176000 km<span>
@@ -253,8 +256,8 @@
         </div>
         <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
           <div class="border m-2 h-100 description">
-            <a
-              href="" data-bs-toggle="modal" data-bs-target="#CarModal" onclick="dataTransfer(price6)"><img class="img-fluid" src="./img/cars/opel astra.webp" alt="opel astra" /></a>
+            <a href="" data-bs-toggle="modal" data-bs-target="#CarModal" onclick="dataTransfer(price6)"><img
+                class="img-fluid" src="./img/cars/opel astra.webp" alt="opel astra" /></a>
             <div class="p-3">
               <strong class="pb-2 d-block">Opel Astra J 1.7 CDTI </strong></a>2012<span> /
               </span>1686 cm<sup>3</sup><span> / </span>160000 km<span>
@@ -269,8 +272,8 @@
         </div>
         <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
           <div class="border m-2 h-100 description">
-            <a
-              href="" data-bs-toggle="modal" data-bs-target="#CarModal" onclick="dataTransfer(price7)"><img class="img-fluid" src="./img/cars/porshe.webp" alt="porshe" /></a>
+            <a href="" data-bs-toggle="modal" data-bs-target="#CarModal" onclick="dataTransfer(price7)"><img
+                class="img-fluid" src="./img/cars/porshe.webp" alt="porshe" /></a>
             <div class="p-3">
               <strong class="pb-2 d-block">Porsche Panamera 4S PDK</strong></a>2010<span> /
               </span>4806 cm<sup>3</sup><span> / </span>190000 km<span>
@@ -285,14 +288,14 @@
         </div>
         <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
           <div class="border m-2 h-100 description">
-            <a
-            href="" data-bs-toggle="modal" data-bs-target="#CarModal" onclick="dataTransfer(price8)"><img class="img-fluid" src="./img/cars/renault.webp" alt="renault" /></a>
+            <a href="" data-bs-toggle="modal" data-bs-target="#CarModal" onclick="dataTransfer(price8)"><img
+                class="img-fluid" src="./img/cars/renault.webp" alt="renault" /></a>
             <div class="p-3">
-             <strong class="pb-2 d-block">RENAULT MEGANE III</strong></a>2010<span> /
+              <strong class="pb-2 d-block">RENAULT MEGANE III</strong></a>2010<span> /
               </span>1500 cm<sup>3</sup><span> / </span>120000 km<span>
                 / </span>Sedan
               <div id="price8">17 000 zł</div>
-            
+
               <button type="button" onclick="dataTransfer(price8)" class="btn btn-primary" data-bs-toggle="modal"
                 data-bs-target="#CarModal">
                 Wybieram
@@ -563,7 +566,7 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./script/aos.js"></script>
   <script type="module" src="./script/cookies.js"></script>
-  
+
 
 </body>
 

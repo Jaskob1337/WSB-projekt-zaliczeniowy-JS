@@ -23,6 +23,16 @@ const button3 = document.getElementById('closeModalCross')
 button3.onclick = function () {
   exitModal()
 };
+const button4 = document.getElementById('closeModalLogo')
+button4.onclick = function () {
+  exitModal()
+};
+const button5 = document.getElementById('closeModalNavMainpage')
+button5.onclick = function () {
+  exitModal()
+};
+
+
 
 window.addEventListener('load', function () {
   if (Cookies.get('isMyModalActive')) {

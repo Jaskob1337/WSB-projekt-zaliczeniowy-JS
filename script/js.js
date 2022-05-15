@@ -5,6 +5,7 @@ function dataTransfer(value) {
   formprice2.innerHTML = value.innerHTML
 }
 
+
 document.addEventListener('DOMContentLoaded', function () {
   const nav = document.querySelector('.navbar')
   const allNavItems = document.querySelectorAll('.nav-link')
@@ -46,6 +47,32 @@ inputfunction.onchange = function () {
   const key = inputfunction.value
   sessionStorage.setItem('key', key)
 }
+
+//  function save surname in input
+const inputfunction2 = document.getElementById('surnameLocalSave')
+inputfunction2.value = sessionStorage.getItem('key2')
+inputfunction2.onchange = function () {
+  const key2 = inputfunction2.value
+  sessionStorage.setItem('key2', key2)
+}
+
+// Function save checkbox === TO FIX
+function save() {	
+	const checkbox = document.getElementById("leasingId");
+    localStorage.setItem("leasingId", checkbox.checked);	
+}
+const checked = JSON.parse(localStorage.getItem("leasingId"));
+    document.getElementById("leasingId").checked = checked;
+
+function save2() {	
+	const checkbox2 = document.getElementById("CaschId");
+    localStorage.setItem("CaschId", checkbox2.checked2);	
+}
+const checked2 = JSON.parse(localStorage.getItem("CaschId"));
+    document.getElementById("CaschId").checked2 = checked2;
+
+
+
 
 // date car choose
 
