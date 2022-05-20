@@ -17,6 +17,12 @@
   margin-bottom: 20px;
 }
 
+@media (min-width: 980px) {
+  .container-guarantee .why-us {
+    margin-top: 95px;
+  }
+}
+
 .container-guarantee .container-icons {
   margin-top: 20px;
 }

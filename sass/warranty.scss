@@ -8,7 +8,10 @@
     .why-us{
         margin-bottom: 20px;
 
-    }
+        @media (min-width: 980px) {
+            margin-top: 95px;
+
+    }}
     .container-icons{
         margin-top: 20px;
 

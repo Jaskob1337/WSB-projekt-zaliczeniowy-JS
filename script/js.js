@@ -216,6 +216,18 @@ selectRenault.addEventListener("click", () => {
     }
   };
 });
+const accesoryHandler = function(){
+  const finalPriceElement = document.getElementById("final-price-span");
+  if(this.checked){
+    finalPriceElement.innerText= +finalPriceElement.innerText +(+this.getAttribute('value'))
+  }else {finalPriceElement.innerText= +finalPriceElement.innerText -(+this.getAttribute('value'))
+}};
+
+
+document.getElementById("flexSwitchCheckDefault").addEventListener('click', accesoryHandler);
+document.getElementById("flexSwitchCheckDefault2").addEventListener('click', accesoryHandler);
+document.getElementById("flexSwitchCheckDefault3").addEventListener('click', accesoryHandler);
+document.getElementById("flexSwitchCheckDefault4").addEventListener('click', accesoryHandler);
 
 document.getElementById("choose1");
 document.getElementById("formprice");
