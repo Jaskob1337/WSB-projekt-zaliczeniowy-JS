@@ -14,7 +14,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-rows: 1fr;
   font-family: "Raleway", sans-serif;
   background: #9a0000;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(154, 0, 0, 0.860382)), color-stop(50%, #ff5a72), to(rgba(145, 0, 0, 0.849177)));
@@ -30,7 +30,7 @@
 #CarModal img {
   max-width: 100%;
   -webkit-filter: drop-shadow(3px 5px 3px #050505);
-          filter: drop-shadow(3px 5px 3px #050505);
+  filter: drop-shadow(3px 5px 3px #050505);
 }
 
 /* ----- Product Section ----- */
@@ -38,7 +38,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.9fr 1fr;
-      grid-template-columns: 0.9fr 1fr;
+  grid-template-columns: 0.9fr 1fr;
   margin: auto;
   padding: 2.5em 0;
   min-width: 600px;
@@ -56,12 +56,12 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
+  grid-template-rows: 1fr;
   width: 100%;
   height: 100%;
   border-radius: 6px;
   -webkit-box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
-          box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
 }
 
 .photo-main {
@@ -76,7 +76,7 @@
   top: 12em;
   max-width: 110%;
   -webkit-transform: scale(1.25);
-          transform: scale(1.25);
+  transform: scale(1.25);
   -webkit-transition: -webkit-transform .7s;
   transition: -webkit-transform .7s;
   transition: transform .7s;
@@ -85,7 +85,7 @@
 
 .photo-main :hover {
   -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .product__info {
