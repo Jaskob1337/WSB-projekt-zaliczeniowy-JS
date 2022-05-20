@@ -44,8 +44,8 @@ btnConfirm.addEventListener("click", async () => {
   }else {
       errorMessage.classList.add('hidden')
     };
+  
 })
-
 
 
 document.getElementById("choose1");
@@ -111,16 +111,17 @@ selectBmw.addEventListener("click", () => {
   };
 });
 selectMerc.addEventListener("click", () => {
+
   const { carId, carPrice, carMileage } = Mercedes;
   result.textContent = `Wybrałeś ${carId}, którego cena bazowa wynosi ${carPrice}zł, oraz ma przejechane juz ${carMileage} km`;
   finalPrice.textContent = ` ${carPrice}`;
   totalPrice = () => {
     let sum = 0;
-    for (let i = 0; i < allCheckbox.length; i++) {
+    for (let i = 0; i < allCheckbox.length; i++) {  
       if (allCheckbox[i].checked) {
         sum += parseInt(allCheckbox[i].value);
       }
-      finalPrice.textContent = sum + Merc.carPrice;
+      finalPrice.textContent = sum + Mercedes.carPrice;
     }
   };
 });
