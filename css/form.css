@@ -103,4 +103,12 @@
   font-size: 0.7em;
   color: grey;
 }
+
+.errorMessage {
+  color: red;
+}
+
+.hidden {
+  display: none;
+}
 /*# sourceMappingURL=form.css.map */
