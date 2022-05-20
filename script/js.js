@@ -291,7 +291,7 @@ document.getElementById("CaschId").checked2 = checked2;
 
 // date car choose
 
-const dateChoose = document.getElementById("car-date-picker");
+const dateChoose = document.getElementById('car-date-picker'); 
 
 dateChoose.min = getDate();
 dateChoose.max = getDate(14);
