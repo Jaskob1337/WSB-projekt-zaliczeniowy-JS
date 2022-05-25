@@ -100,7 +100,7 @@
 
                   <div class="carschoosemodal">
                     <p class="result">  </p>
-                    <p>Wybierz finansowanie:</p>
+                    <p>Wybierz finansowanie:<span id="formprice"></span></p>
                     <form class="payment-choice">
                       <input id="leasingId" class="selectLeasing confirm" onClick="save()" type="radio" name="payment" value="wartość" />
 
@@ -152,7 +152,7 @@
                     <label class="form-check-label" for="flexSwitchCheckDefault4">Płyn do spryskiwaczy - <span>25
                         zł</span></label>
                   </div>
-                  <div class="final-price">Finalna cena to:<span value="0" class="finalPrice" id="final-price-span"></span></div>
+                  <div class="final-price">Finalna cena to: <span value="0" class="finalPrice" id="final-price-span"></span></div>
 
                 </div>
               </section>
@@ -172,10 +172,11 @@
       <div class="row no-gutters mb-4">
         <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
           <div class="border m-2 h-100 description">
-            <a href="" data-bs-toggle="modal" data-bs-target="#CarModal" onclick="dataTransfer(price1)"><img
+          
+            <a href="" class="" data-bs-toggle="modal" data-bs-target="#CarModal" onclick="dataTransfer(price1)"><img
                 class="img-fluid" src="./img/cars/bmw 318 e91.webp" alt="bmw" /></a>
             <div class="p-3">
-              <strong class="pb-2 d-block">BMW 318d Touring E91</strong></a>2010<span> /
+              <strong class="pb-2 d-block ">BMW 318d Touring E91</strong></a>2010<span> /
               </span>2000 cm<sup>3</sup><span> / </span>210000 km<span>
                 / </span>Kombi
               <p id="price1">23 000 zł</p>
@@ -184,14 +185,13 @@
                 Wybieram
               </button>
 
-              <div><span id="formprice"></span></div>
             </div>
           </div>
         </div>
         <div class="car-card-dimensions col-12 col-md-6 col-lg-3">
           <div class="border m-2 h-100 description">
             <a href="" data-bs-toggle="modal" data-bs-target="#CarModal" onclick="dataTransfer(price2)"><img
-                class="img-fluid" src="./img/cars/Mercedes E Klasa biały.webp" alt="biały mercedes e klasa" /></a>
+                class="img-fluid " src="./img/cars/Mercedes E Klasa biały.webp" alt="biały mercedes e klasa" /></a>
             <div class="p-3">
               <strong class="pb-2 d-block">Mercedes E Klasa </strong></a>2012<span> / </span>2
               200 cm<sup>3</sup><span> / </span>290000 km<span>
@@ -305,6 +305,7 @@
           </div>
         </div>
       </div>
+      
     </div>
 
 

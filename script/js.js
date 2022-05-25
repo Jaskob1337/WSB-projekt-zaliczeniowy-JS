@@ -52,9 +52,6 @@ btnConfirm.addEventListener("click", () => {
   }
 });
 
-document.getElementById("choose1");
-document.getElementById("formprice");
-
 // tablice z obiektami
 
 const BMW = {
@@ -117,6 +114,8 @@ selectBmw.addEventListener("click", () => {
       finalPrice.textContent = sum + BMW.carPrice;
     }
   };
+  window.localStorage.setItem('loadData', 'selectBmw');
+
 });
 selectMerc.addEventListener("click", () => {
   const { carId, carPrice, carMileage } = Mercedes;
@@ -233,7 +232,7 @@ document.getElementById("choose1");
 document.getElementById("formprice");
 
 function dataTransfer(value) {
-  formprice2.innerHTML = value.innerHTML;
+  formprice.innerHTML = value.innerHTML;
 }
 
 document.addEventListener("DOMContentLoaded", function () {

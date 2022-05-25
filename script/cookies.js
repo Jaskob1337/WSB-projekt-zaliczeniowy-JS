@@ -1,8 +1,13 @@
 
-import Cookies from 'https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.mjs' 
+import Cookies from 'https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.mjs';
+
+
+
+
 const loadModal = function () {
   $('#CarModal').modal('show')
   Cookies.set('isMyModalActive', true)
+
 }
 const exitModal = function () {
   $('#CarModal').modal('hide')
@@ -10,10 +15,16 @@ const exitModal = function () {
 }
 const buttons = document.querySelectorAll('[data-bs-toggle="modal"]')
 
+
 for (let i = 0; i < buttons.length; i++) {
     buttons[i].onclick = function () {
         loadModal()
+        
     };
+
+    let activeCar = localStorage.getItem('loadData');
+    $('.' + activeCar).trigger('click');
+   
 }
 const button2 = document.getElementById('buttonexit')
 button2.onclick = function () {
@@ -40,3 +51,4 @@ window.addEventListener('load', function () {
    console.log('ddhddd'); loadModal();
   }
 })
+
