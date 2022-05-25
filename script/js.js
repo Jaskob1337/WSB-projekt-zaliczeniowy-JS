@@ -1,5 +1,4 @@
 const result = document.querySelector(".result");
-const result2 = document.querySelector(".result2");
 const selectBmw = document.querySelector(".selectBmw");
 const selectMerc = document.querySelector(".selectMerc");
 const selectSkoda = document.querySelector(".selectSkoda");
@@ -130,6 +129,7 @@ selectMerc.addEventListener("click", () => {
       finalPrice.textContent = sum + Mercedes.carPrice;
     }
   };
+  window.localStorage.setItem('loadData', 'selectMerc');
 });
 selectSkoda.addEventListener("click", () => {
   const { carId, carPrice, carMileage } = Skoda;
@@ -144,6 +144,7 @@ selectSkoda.addEventListener("click", () => {
       finalPrice.textContent = sum + Skoda.carPrice;
     }
   };
+  window.localStorage.setItem('loadData', 'selecSkoda');
 });
 selectFiat.addEventListener("click", () => {
   const { carId, carPrice, carMileage } = Fiat;
@@ -158,6 +159,7 @@ selectFiat.addEventListener("click", () => {
       finalPrice.textContent = sum + Fiat.carPrice;
     }
   };
+  window.localStorage.setItem('loadData', 'selectFiat');
 });
 selectKia.addEventListener("click", () => {
   const { carId, carPrice, carMileage } = Kia;
@@ -172,6 +174,7 @@ selectKia.addEventListener("click", () => {
       finalPrice.textContent = sum + Kia.carPrice;
     }
   };
+  window.localStorage.setItem('loadData', 'selectKia');
 });
 selectOpel.addEventListener("click", () => {
   const { carId, carPrice, carMileage } = Opel;
@@ -186,6 +189,7 @@ selectOpel.addEventListener("click", () => {
       finalPrice.textContent = sum + Opel.carPrice;
     }
   };
+  window.localStorage.setItem('loadData', 'selectOpel');
 });
 selectPorsche.addEventListener("click", () => {
   const { carId, carPrice, carMileage } = Porsche;
@@ -200,6 +204,7 @@ selectPorsche.addEventListener("click", () => {
       finalPrice.textContent = sum + Porsche.carPrice;
     }
   };
+  window.localStorage.setItem('loadData', 'selectPorsche');
 });
 selectRenault.addEventListener("click", () => {
   const { carId, carPrice, carMileage } = Renault;
@@ -214,6 +219,7 @@ selectRenault.addEventListener("click", () => {
       finalPrice.textContent = sum + Renault.carPrice;
     }
   };
+  window.localStorage.setItem('loadData', 'selectRenault');
 });
 const accesoryHandler = function(){
   const finalPriceElement = document.getElementById("final-price-span");
@@ -228,12 +234,13 @@ document.getElementById("flexSwitchCheckDefault2").addEventListener('click', acc
 document.getElementById("flexSwitchCheckDefault3").addEventListener('click', accesoryHandler);
 document.getElementById("flexSwitchCheckDefault4").addEventListener('click', accesoryHandler);
 
-document.getElementById("choose1");
-document.getElementById("formprice");
 
-function dataTransfer(value) {
-  formprice.innerHTML = value.innerHTML;
-}
+// old function value holder
+// document.getElementById("formprice");
+
+// function dataTransfer(value) {
+//   formprice.innerHTML = value.innerHTML;
+// }
 
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector(".navbar");

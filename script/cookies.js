@@ -2,8 +2,6 @@
 import Cookies from 'https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.mjs';
 
 
-
-
 const loadModal = function () {
   $('#CarModal').modal('show')
   Cookies.set('isMyModalActive', true)
@@ -12,6 +10,8 @@ const loadModal = function () {
 const exitModal = function () {
   $('#CarModal').modal('hide')
   Cookies.remove('isMyModalActive')
+
+  
 }
 const buttons = document.querySelectorAll('[data-bs-toggle="modal"]')
 
@@ -37,7 +37,15 @@ button3.onclick = function () {
 const button4 = document.getElementById('closeModalLogo')
 button4.onclick = function () {
   exitModal()
+
+  button4.onclick = function() {
+    $('CarModal').modal('hide')}
+  // $('#CarModal').modal.trigger('hide');
 };
+
+
+
+
 const button5 = document.getElementById('closeModalNavMainpage')
 button5.onclick = function () {
   exitModal()
