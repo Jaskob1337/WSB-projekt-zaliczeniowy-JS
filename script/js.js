@@ -56,7 +56,7 @@ const validation = () => {
     
 };
 if(valid){
-  ='sites/summaryModal.html')
+  window.open(location.href='sites/summaryModal.html')
 } 
 
 }
