@@ -27,31 +27,41 @@ const graduate = document.querySelector(".graduate");
 
 const btnPrimary = document.querySelector(".btn-primary");
 
-//modal
-
-btnConfirm.addEventListener("click", () => {
-  
+const validation = () => {
+  let valid = true;
   if (confirm[0].checked || confirm[1].checked) {
-    console.log(true);
     errorMessage[0].classList.add("hidden");
+    
   } else {
     errorMessage[0].classList.remove("hidden");
+    valid = false
   }
 
   if (inputName.value.length < 3) {
     errorMessage[1].classList.remove("hidden");
+    valid = false
   } else {
     errorMessage[1].classList.add("hidden");
+    
   }
 
   if (inputSurname.value.length < 3) {
     errorMessage[2].classList.remove("hidden");
+    valid = false
   } else {
     errorMessage[2].classList.add("hidden");
-  }
-});
+    
+};
+if(valid){
+  window.open(location.href='sites/summaryModal.html')
+} 
 
-// tablice z obiektami
+}
+btnConfirm.addEventListener("click",validation )
+  
+
+
+// arrays with objects
 
 const BMW = {
   carId: "BMW",
@@ -98,7 +108,7 @@ const choice = {
   paymentCash: "Cash",
 };
 
-// zapisanie
+// saved cars
 
 selectBmw.addEventListener("click", () => {
   const { carId, carPrice, carMileage } = BMW;
